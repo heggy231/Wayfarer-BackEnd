@@ -3,7 +3,7 @@ const
     data = require('./data'),
     db = require('../models')
 
-
+//Go to the models folder match the model being used with the keys of what appears in the data.json
 db.CityPost.remove({})
     .then(() => {
         db.CityPost.collection.insert(data)
@@ -15,3 +15,4 @@ db.CityPost.remove({})
     .catch(err => {
         console.log(err)
     })
+

@@ -5,6 +5,8 @@ const
   jwt = require('jsonwebtoken'),
   controllers = require('../controllers')
 
+
+//This are the routes to the login and sign up forms/button
 router.post('/signup', controllers.user.signup);  //<--- signup route is here
 
 router.post('/login', controllers.user.login)  //<--- login route is  here
